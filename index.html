@@ -1,0 +1,1268 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>豆瓣</title>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<style type="text/css">
+			body{
+				margin: 0 auto;
+				padding: 0;
+			}
+			header{
+				position: relative;
+				width: 950px;
+				height: 100px;
+				/*background-color: wheat;*/
+				margin: 0 auto;
+			}
+			#douban{
+				position: absolute;
+				margin: 10px 0px;
+			}
+			.douban-head1{
+				position: absolute;
+				margin: 36px 180px;
+				width: 300px;
+				height: 28px;
+				/*border: 2px solid red;*/
+			}
+			#f1{
+				width: 230px;
+				line-height: 26px;
+				font-size: 12px;	
+			}
+			#f2{
+				margin: 0;
+				padding: 0;
+				width: 36px;
+				height: 28px;
+				border-radius: 10px;
+			}
+			header ul{
+				float: right;
+				list-style: none;
+				margin-top:36px ;
+			}
+			header ul li{
+				float: left;
+				margin-right: 18px;
+				font-family: "微软雅黑";
+				font-size: 20px;
+			}
+			header ul li a:hover{
+				text-shadow: 1px 3px 3px #000000;
+			}
+			header ul li a{
+				text-decoration: none;
+				font-weight: bolder;
+			}
+			header ul li:nth-child(1) a{color: #8B4513;}
+			header ul li:nth-child(2) a{color: #4169E1;}
+			header ul li:nth-child(3) a{color: #FFD700;}
+			header ul li:nth-child(4) a{color: #1E90FF;}
+			header ul li:nth-child(5) a{color: #FF8C00;}
+			header ul li:nth-child(6) a{color: #87CEEB;}
+			header ul li:nth-child(7) a{color: #000000;}
+			header ul li:nth-child(8) a{color: #008000;}
+			
+/*top部分*/
+			.top{
+				position: relative;
+				width: 100%;
+				height: 172px;
+				background: #edf4ed;
+				margin: auto;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			#tu1{
+				position: absolute;
+				height: 172px;
+				margin-left: -600px;
+				/*margin-left: 220px;*/
+				width: 480px;
+			}
+			.app{
+				position: absolute;
+				margin:30px 700px ;
+				width: 120px;
+				height: 120px;
+				/*background-color: white;*/
+			}
+			.app p{
+				position: absolute;
+				font-size: 24px;
+				margin-top: 8px;
+				font-weight: 500;
+			}
+			.app a{
+				position: absolute;
+				margin-top:58px ;
+				font-size: 11px;
+				color: white;
+				background-color: #32CD32;
+				display:block;
+				line-height: 30px ;
+				width: 114px;
+				border-radius:3px ;
+				text-decoration: none;
+				text-align: center;
+			}
+			#app-ma{
+				position: absolute;
+				margin-top: 58px;
+				margin-left: 117px;
+				width: 28px;
+				height: 28px;
+				
+				/*background-color: brown;*/
+				border-radius:3px ;
+				border: 1px solid #32CD32;
+			}
+			#app-ma img{
+				width: 28px;
+				height: 28px;
+			}
+			#Denglu{
+				position: absolute;
+				margin-top:18px ;
+				margin-left: 680px;
+				/*margin-left: 950px;*/
+				width: 260px;
+				height: 140px;
+				/*background-color: skyblue;*/
+				padding: 8px;
+			}
+			#Denglu div:nth-child(1) input{
+				position: absolute;
+				padding-left:10px ;
+				width: 240px;
+				height: 28px;
+				border: 1px solid #808080;
+				font-size: 12px;
+			}
+			#Denglu div:nth-child(2) input{
+				position: absolute;
+				margin-top:36px;
+				padding-left:10px ;
+				width: 240px;
+				height: 28px;
+				border: 1px solid #808080;
+				font-size: 12px;
+			}
+			#Denglu div:nth-child(3){
+				position: absolute;
+				margin-top: 72px;
+			}
+			#anniu input{
+				width: 124px;
+				height: 30px;
+				border-radius:8px ;
+				border: 1px solid green;
+			}
+			#anniu input:nth-child(1){
+				background-color: green;
+				color: white;
+			}
+			#anniu input:nth-child(2){
+				color:green ;
+			}
+			#Denglu div:nth-child(5){
+				position: absolute;
+				margin-top: 114px;
+				margin-left: 194px;
+				font-size: 12px;
+				color: #000000;
+			}
+			
+/*中间模块*/
+			.section{
+				position: relative;
+				margin: 0 auto;
+				width: 950px;
+				height: 616px;
+				background-color: #edf4ed;
+				margin-top: 36px;
+			}
+			
+/*中间模块---1*/
+			#section1-left{
+				width: 655px;
+				height: 440px;
+				/*background: lawngreen;*/
+				position:absolute;
+				margin-top: 100px;
+			}
+			#section1-left p{
+				position: absolute;
+				margin-top: 8px; 
+				font-weight:500;	
+			}
+			#section1-left-1{
+				position: absolute;
+				width: 360px;
+				height: 400px;
+				margin-top:42px ;
+				/*background-color: darkcyan;*/
+				font-size: 12px;
+				color:brown;
+			}
+			#section1-left-1 div:nth-child(1){
+				position: absolute;
+			}
+			#section1-left-1 div:nth-child(2){
+				position: absolute;
+				margin-left:184px ;
+			}
+			#section1-left-1 div:nth-child(3){
+				position: absolute;
+				margin-top:210px ;
+			}
+			#section1-left-1 div:nth-child(4){
+				position: absolute;
+				margin-top:210px ;
+				margin-left: 184px;
+			}
+			#section1-left-1 div img:hover{
+				box-shadow:3px 3px 3px  #696969;	
+			}
+			#section1-left-1 div span{
+				color: #696969;
+			}
+			#section1-left-2{
+				position: absolute;
+				width: 275px;
+				height: 400px;
+				margin-top: 42px;
+				margin-left: 370px;
+				/*background-color: fuchsia;*/
+			}
+			#section1-left-2 ul li a{
+				text-decoration: none;
+				color: seagreen;
+			}
+			#section1-right{
+				width:265px ;
+				height: 510px;
+				/*background-color: brown;*/
+				position: absolute;
+				margin-top: 100px;
+				margin-left: 685px;
+			}
+			#section1-right img{
+				position: absolute;
+				margin-top: 12px;
+				width: 265px;
+			}
+			#section1-right p{
+				position: absolute;
+				margin:160px 12px;
+			}
+			#section1-right ul{
+				position: absolute;
+				margin: 190px -24px;
+				font-size: 14px;
+				line-height: 24px;
+				list-style: none;
+			}
+			#section1-right ul li a{
+				text-decoration: none;
+			}
+			#section1-right span{
+				font-size: 13px;
+				color: #696969;
+			}
+			
+/*中间模块----2*/
+			#section2-left{
+				position: absolute;
+				width: 40px;
+				height: 576px;
+				margin: 20px 50px;
+				/*background: seagreen;*/
+				text-align: center;
+			}
+			#section2-left a{
+				text-decoration:none;
+				font-family: 华文行楷;
+				font-size: 32px;
+				color: #000000;
+			}
+			#section2-left a:hover{
+				text-shadow: 2px 3px 3px blueviolet;
+				border: 2px solid #FF8C00;
+			}
+			#section2-right {
+				position: absolute;
+				width: 830px;
+				height: 576px;
+				margin: 20px 120px;
+				padding: 0;
+				/*background-color: blueviolet;*/
+			}
+			#section2-right p{
+				position: absolute;
+				font-size: 16px;
+				margin: 0;
+			}
+			#section2-right ul{
+				position: absolute;
+				width: 830px;
+				height: 560px;
+				/*background: indianred;*/
+				list-style: none;
+				padding: 0;
+				margin-top: 36px;
+			}
+			#section2-right ul li{
+				float: left;
+				width: 100px;
+				margin-right: 64px;
+				margin-bottom: 60px;
+				text-align:center;
+				font-size: 15px;
+				/*line-height: 20px;*/
+			}
+			#section2-right ul li a{
+				text-decoration: none;
+				font-size: 14px;			
+			}
+			#section2-right ul li a img{
+				width: 100px;
+				height: 140px
+			}
+			#section2-right ul li a img:hover{
+				box-shadow: 2px 3px 3px #000000;
+			}
+			#section2-right ul li span{
+				margin: 6px auto;
+				font-size: 13px;
+				color: #808080;
+				display: block;
+			}
+			
+/*中间模块----3*/
+			
+			#section3-left{
+				position: absolute;
+				width: 40px;
+				height: 576px;
+				margin: 20px 50px;
+				/*background: seagreen;*/
+				text-align: center;
+			}
+			#section3-left a{
+				text-decoration: none;
+				font-family: 华文行楷;
+				font-size: 32px;
+				color: #000000;
+			}
+			#section3-left a:hover{
+				text-shadow: 2px 3px 3px blueviolet;
+				border: 2px solid #FF8C00;
+			}
+			#section3-right1{
+				position: absolute;
+				width: 830px;
+				height: 288px;
+				margin: 20px 120px;
+				padding: 0;
+				/*background-color: blueviolet;*/
+			}
+			#section3 p{
+				font-size:16px ;
+				margin: 0;
+			}
+			#section3 p a{
+				text-decoration: none;
+			}
+			#section3-right2{
+				position: absolute;
+				width: 830px;
+				height: 288px;
+				margin: 308px 120px;
+				padding: 0;
+				/*background-color: seagreen;*/
+			}
+			#section3 ul{
+				list-style: none;
+				margin-left: -40px;
+				margin-top: 20px;
+			}
+			#section3 ul li{
+				float: left;
+				margin-right: 22px;
+				text-align: center;
+			}
+			#section3 ul li img{
+				width: 250px;
+				height: 140px;
+			}
+			#section3 ul li a img:hover{
+				box-shadow: 2px 3px 3px #000000;
+			}
+			#section3 ul li a{
+				text-decoration: none;
+				font-size: 14px;
+				display: block;
+			}
+			#section3 ul li a:nth-child(2){
+				line-height: 40px;
+			}
+			#section3 ul li span{
+				margin: 6px auto;
+				font-size: 13px;
+				color: #808080;
+				display: block;
+			}
+			
+/*中间模块-4*/
+			#section4-left{
+				position: absolute;
+				width: 100px;
+				height: 550px;
+				margin: 20px 25px;
+				/*background-color: yellow;*/
+				text-align: center;
+			}
+			#section4-left a{
+				color: black;
+				font-size: 32px;
+				font-family: 华文行楷;
+				text-decoration: none;
+			}
+			#section4-left a:hover{
+				text-shadow: 2px 3px 3px blueviolet;
+			}
+			#section4-left ul{
+				margin-left:-60px ;
+				margin-top: 8px;
+				list-style: none;
+				line-height: 26px;
+			}
+			#section4-left ul li a{
+				font-size: 14px;
+				font-family: "微软雅黑";
+			}
+			#section4-middle{
+				position: absolute;
+				width: 560px;
+				height: 550px;
+				margin: 20px 125px;
+				/*background-color: blue;*/
+			}
+			#section4-middle p{
+				margin: 0;
+				font-size:15px ;
+				color: seagreen;
+			}
+			#section4-middle p a{
+				text-decoration: none;
+			}
+			#section4-middle ul li img{
+				width: 48px;
+				height: 48px;
+			}
+			#section4-middle ul{
+				/*background-color: seagreen;*/
+				margin-left: -40px;
+			}
+			#section4-middle ul li{
+				list-style: none;
+				float: left;
+				/*background-color: white;*/
+				width:280px ;
+				line-height: 80px;
+			}
+			#section4-middle ul li img:hover{
+				box-shadow: 2px 3px 3px #000000;
+			}
+			#section4-middle ul li div:nth-child(2){
+				position: absolute;
+				margin: -82px 56px;
+				line-height: 24px;
+			}
+			#section4-middle ul li div p{
+				font-size: 14px;
+			}
+			#section4-middle ul li div span{
+				font-size: 12px;
+				color: #808080;
+			}			
+			#section4-right{
+				position: absolute;
+				width: 260px;
+				height: 550px;
+				margin: 20px 685px;
+				/*background-color:aqua;*/
+			}
+			#section4-right p{
+				margin: 0;
+				font-size: 16px;
+				margin-bottom: 14px;
+			}
+			#section4-right .section4-right-1 p{
+				margin: 0;
+			}
+			.section4-right-1 p a{
+				font-size: 14px;
+				text-decoration: none;
+				color: #000000;
+			}
+			.section4-right-1{
+				position: relative;
+				/*background-color: cornflowerblue;*/
+				height: 12%;
+				margin-top: 0px;
+			}
+			.section4-right-1 ul{
+				margin-top:4px;
+				margin-left:-30px ;
+				list-style: none;
+			}
+			.section4-right-1 ul li{
+				float: left;
+				margin-right:12px;
+				font-size: 12px;
+				color: seagreen;
+			}
+			
+/*中间第五部分*/
+			#section5-left{
+				position: absolute;
+				width: 100px;
+				height: 550px;
+				margin: 20px 25px;
+				/*background-color: yellow;*/
+				text-align: center;
+			}
+			#section5-left a{
+				color: black;
+				font-size: 32px;
+				font-family: 华文行楷;
+				text-decoration: none;
+			}
+			#section5-left a:hover{
+				text-shadow: 2px 3px 3px blueviolet;
+			}
+			#section5-middle{
+				position: absolute;
+				width: 560px;
+				height: 550px;
+				margin: 20px 125px;
+				/*background-color: blue;*/
+			}
+			#section5-middle p{
+				margin: 0;
+				font-size:15px ;
+				color: seagreen;
+			}
+			#section5-middle p a{
+				text-decoration: none;
+			}
+			#section5-middle ul{
+				padding: 0;
+			}
+			#section5-middle ul li{
+				list-style: none;
+				float: left;
+				margin-right: 32px;
+				margin-bottom: 28px;
+			}
+			#section5-middle ul li img{
+				width: 240px;
+				height: 220px;
+			}
+			#section5-middle ul li p a{
+				font-size: 17px;
+				color: #37a;
+			}
+			#section5-middle ul li p span{
+				font-size: 17px;
+				color: red;
+				float: right;
+			}
+			#section5-right{
+				position: absolute;
+				width: 260px;
+				height: 550px;
+				margin: 20px 685px;
+				/*background-color:aqua;*/
+			}
+			#section5-right1{
+				width: 100%;
+				height: 160px;
+				/*background: darkgreen;*/
+				margin-top: -16px;
+			}
+			#section5-right1 p{
+				color: #072;
+			}
+			#section5-right1 img{
+				width: 260px;
+				height: 95px;
+			}
+			#section5-right1 a{
+				color: #37a;
+				text-decoration: none;
+			}
+			#section5-right2{
+				width: 100%;
+				height: 360px;
+				/*background: purple;*/
+			}
+			#section5-right2 p{
+				color: #072;
+			}
+			#section5-right2 p span{
+				font-size: 14px;
+				color: #37a;
+			}
+			#section5-right2 ul li{
+				list-style: none;
+				margin-left: -40px;
+				margin-bottom: 20px;
+			}
+			#section5-right2 ul li a{
+				text-decoration: none;
+				color: #3377AA;
+				font-size: 14px;
+			}
+			#section5-right2-text span{
+				font-size: 13px;
+				color: #6a6a6a;
+			}
+			#section5-right2-text span:nth-child(2){
+				float: right;
+			}
+			
+/*底栏部分*/
+			footer{
+				position: relative;
+				width: 950px;
+				height: 140px;
+				margin: 0 auto;
+				/*background-color: cornflowerblue;*/
+				border-top: 1px dashed #778899;
+			}
+			footer div:nth-child(1){
+				position: absolute;
+				margin-top: 10px;
+				width: 460px;
+				/*background-color: yellow;*/
+				color: #808080;
+				font-size: 12px;
+				line-height: 8px;
+				text-align: center;
+			}
+			footer ul{
+				list-style: none;
+				float: right;
+				margin-right: 25px;
+			}
+			footer ul li{
+				float: left;
+				font-size: 13px;
+				margin-right:10px ;
+				color: #696969;
+			}
+			footer a{
+				text-decoration: none;
+			}
+			footer #tu0{
+				position: absolute;
+				margin-top:50px ;
+				margin-left: 620px;
+			}
+			
+/*回到顶部按钮*/
+			 #dtop {          
+	            position: fixed;   /*固定位置*/
+	            right: 120px;
+	            bottom: 8px;
+	            /*display: none;*/    /*开始默认隐藏*/
+	            margin-bottom: 5px;
+	            width: 40px;
+	            height: 36px;
+	            border-radius: 2px;   
+	            cursor: pointer;
+        	}
+        	#dtop a img{
+        		width: 42px;
+        		height: 42px;
+        		border-radius:15px ;
+        	}
+		</style>
+	
+	</head>
+	<body>
+		<header>
+			<a href="https://www.douban.com"><img id="douban" src="img/douban.png" alt="logo" style="width: 180px;"/></a>
+			<div class="douban-head1">
+				<form action="">
+					<span><input id="f1" type="text" placeholder="书籍、电影、音乐、小组、小站、成员"/></span>
+					<span><input id="f2" type="submit" value="搜索"/></span>
+				</form>
+			</div>
+			<div class="douban-head2">
+				<ul>
+					<li><a href="https://book.douban.com" target="_blank">读书</a></li>
+					<li><a href="https://movie.douban.com" target="_blank">电影</a></li>
+					<li><a href="https://music.douban.com" target="_blank">音乐</a></li>
+					<li><a href="https://www.douban.com/group/" target="_blank">小组</a></li>
+					<li><a href="https://www.douban.com/location/" target="_blank">同城</a></li>
+					<li><a href="https://douban.fm" target="_blank">FM</a></li>
+					<li><a href="https://time.douban.com/?dt_time_source=douban-web_anonymous_index_top_nav" target="_blank">时间</a></li>
+					<li><a href="https://market.douban.com?utm_campaign=anonymous_top_nav&utm_source=douban&utm_medium=pc_web" target="_blank">豆品</a></li>
+				</ul>
+			</div>
+		</header>
+		
+		<div class="top">
+			<img id="tu1" src="img/1653ca7fe02u04zlerm.jpg.png" />
+			<div class="app">
+				<p>豆瓣 6.0</p>
+				<a href="https://www.douban.com/doubanapp/app?channel=nimingye">下载豆瓣 App</a>
+				<div id="app-ma">
+					<img src="img/icon_qrcode_green.png" id="haha">
+				</div>
+			</div>
+			<div id="Denglu">
+				<div>
+					<input type="text" placeholder="邮箱/手机号"/>
+				</div>
+				<div>
+					<input type="password" placeholder="密码" />
+				</div>
+				<div id="anniu">
+					<input type="submit" value="豆瓣登录"/>
+					<input type="submit"  value="注册账号"/>
+				</div>
+				<div style="position: absolute;margin-top: 100px;font-size: 12px;">
+					<p><input type="checkbox"  />记住我</p>
+				</div>
+				<div>
+					<a href="https://www.douban.com/accounts/connect/wechat/?from=douban-web-anony-home">微信</a>
+					<a href="https://www.douban.com/accounts/connect/sina_weibo/?from=douban-web-anony-home">微博</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="section" id="section1">
+			<img style="width: 950px;height: 90px;position: absolute;" src="img/section1/9f4134d3e616b11.jpg"/>
+			<div id="section1-left">
+				<p>
+					热点内容 . . . . . 
+					<span>
+						(<a href="https://www.douban.com/explore/">更多</a>)
+					</span>
+				</p>
+				<div id="section1-left-1">
+					<div>
+						<a href="https://www.douban.com/photos/album/1683063787/" target="_blank"><img src="img/section1/p2519255768.jpg"/></a>
+						<br />对生活热爱 &nbsp;(<span>3215张</span>)
+					</div>
+					<div>
+						<a href=""><img src="img/section1/p2540589745.jpg"/></a>
+						<br />矮子搭配乐&nbsp;(<span>3445张</span>)
+					</div>
+					<div>
+						<a href=""><img src="img/section1/p2459165827.jpg"/></a>
+						<br />武汉的樱花&nbsp;(<span>5215张</span>)
+					</div>
+					<div>
+						<a href=""><img src="img/section1/p2518957227.jpg"/></a>
+						<br />圃生厨房&nbsp;(<span>525张</span>)
+					</div>
+				</div>
+				<div id="section1-left-2">
+					<ul style="font-size: 12px;line-height: 20px;">
+						<li><a href="">来自僧侣的声音、此后岁月蹉跎也与我无关<br />戴文子的日记<br />如果曾有那么一刹那，你有幸听到来自僧侣的声音，你就会明白，在那些声音里，潜藏...</a></li>
+						<li><a href="">我结婚前一天，我爸抽搐地在我奶奶家哭了好久，不说话，就是哭” | 父亲的50个脆弱瞬间</a></li>
+						<li><a href="">在广西游来游去</a></li>
+						<li><a href="">日本七夕：从传说到现代</a></li>
+						<li><a href="">萧峰论【谨以此旧文悼念我21岁前的偶像金庸先生】</a></li>
+						<li><a href="">别去羡慕那些大作家，他们曾经和你一样不想动笔</a></li>
+						<li><a href="">在女巫镇过万圣节</a></li>
+						<li><a href="">残酷之下，记录生存美学</a></li>
+						<li><a href="">我和父亲相依为命的时光</a></li>
+						<li><a href="">【专访】汪民安：对艺术而言，创造性和杰作有时候诞生于混乱</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="section1-right">
+				<a href=""><img src="img/section1/74abb18ab0dbfed.jpg"/></a>
+				<p>热门话题  . . . . .(<a href="">去广场</a>)</p>
+				<ul>
+					<li>
+						<a href="">我的2018年度读书报告</a>
+						<br /><span>323800人浏览</span>
+					</li>
+					<li>
+						<a href="">跟着电影一起去旅行</a>
+						<br /><span>品牌话题 412938人浏览</span>
+					</li>
+					<li>
+						<a href="">我的2018年度观影报告</a>
+						<br /><span>10254人浏览</span>
+					</li>
+					<li>
+						<a href="">我的2018年度音乐报告</a>
+						<br /><span>651351人浏览</span>
+					</li>
+					<li>
+						<a href="">2018年年终总结</a>
+						<br /><span>416665人浏览</span>
+					</li>
+					<li>
+						<a href="">视频.你念过绕到疯的绕口令
+						</a><br /><span>6535489人浏览</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="section" id="section2">
+			<div id="section2-left">
+				<a href="https://time.douban.com?dt_time_source=douban-web_anonymous">豆瓣时间</a>
+			</div>
+			<div id="section2-right">
+				<p>热门专栏 . . . . .(<a href="https://time.douban.com?dt_time_source=douban-web_anonymous">更多</a>)</p>
+				<ul>
+					<li>
+						<a href="https://m.douban.com/time/column/124/?dt_time_source=douban-web_anonymous" target="_blank"><img src="img/section2/2624850a-02b1-11e9-a86e-0242ac11000b.jpg"/></a>
+						<a href="">切断你的习以为常——认知世界的15个...</a>
+						<span>音频专栏</span>
+					</li>
+					<li>
+						<a href=""><img src="img/section2/2966f3b0-029d-11e9-b2ef-0242ac110037.jpg"/></a>
+						<a href="">假如时光可触摸——12座城市串起的欧洲史</a>
+						<span>音频专栏</span>
+					</li>
+					<li>
+						<a href=""><img src="img/section2/f956e608-02a1-11e9-8b78-0242ac11000f.jpg"/></a>
+						<a href="">杀死一枚诡辩者——你不可不知的逻辑谬误</a>
+						<span>音频专栏</span>
+					</li>
+					<li>
+						<a href=""><img src="img/section2/84a31928-02b8-11e9-a6e0-0242ac110008.jpg"/></a>
+						<a href="">电影的左脑——电影制作技术的硬核浪漫</a>
+						<span>音频专栏</span>
+					</li>
+					<li>
+						<a href=""><img src="img/section2/e0a1919c-02d0-11e9-b9f6-0242ac11000f.jpg"/></a>
+						<a href="">不完美生活指南——品位幻象下的消费社会</a>
+						<span>音频专栏</span>
+					</li>
+					<li>
+						<a href=""><img src="img/section2/37c8cf14-fcf3-11e8-a97b-0242ac110012.png"/></a>
+						<a href="">会说会写会工作——21天职场沟通特训营</a>
+						<span>音频专栏</span>
+					</li>
+					<li>
+						<a href=""><img src="img/section2/67de6430-f473-11e8-b11e-0242ac110013.jpg"/></a>
+						<a href="">名师带入门-21天工笔画研习课</a>
+						<span>音频专栏</span>
+					</li>
+					<li>
+						<a href=""><img src="img/section2/5c4501cc-e340-11e8-af34-0242ac110016.jpg"/></a>
+						<a href="">一个作家的养成——写作成长营名师直播课精选</a>
+						<span>音频专栏</span>
+					</li>
+					<li>
+						<a href=""><img src="img/section2/155d88ce-b0d7-11e8-b24b-0242ac11000e.jpg"/></a>
+						<a href="">黑泽明与杨德昌——焦雄屏电影大师手册</a>
+						<span>音频专栏</span>
+					</li>
+					<li>
+						<a href=""><img src="img/section2/81c6658c-6341-11e8-b830-0242ac110019.jpg"/></a>
+						<a href="">古典音乐的奇幻之旅——从入门到上瘾的108堂课</a>
+						<span>音频专栏</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="section" id="section3">
+			<div id="section3-left">
+				<a href="">视频观影</a>
+			</div>
+			<div id="section3-right1">
+				<p>瓣嘴 . . . . .(<a href="https://video.douban.com/column/10018/">更多</a>)</p>
+				<ul>
+					<li>
+						<a href="https://www.douban.com/note/689109414/" target="_blank"><img src="img/section3/file-1536139554.jpg"/></a>
+						<a href="">马伊琍衣品遭吐槽，清奇脑路解读流行语</a>
+						<span>视频专栏</span>
+					</li>
+					<li>
+						<a href=""><img src="img/section3/file-1535537921.jpg"/></a>
+						<a href="">姚晨忘带偶像包袱，展示十级搞笑功力</a>
+						<span>视频专栏</span>
+					</li>
+					<li>
+						<a href=""><img src="img/section3/file-1534925572.jpg"/></a>
+						<a href="">陈坤公开三大bug，原来你是这样的厂花</a>
+						<span>视频专栏</span>
+					</li>
+				</ul>
+			</div>
+			<div id="section3-right2">
+				<p>观影会客厅 . . . . .(<a href="https://video.douban.com/column/10008/">更多</a>)</p>
+				<ul>
+					<li>
+						<a href=""><img src="img/section3/file-1536839373.jpg"/></a>
+						<a href="">焦雄屏：把电影当做一种信仰</a>
+						<span>视频专栏</span>
+					</li>
+					<li>
+						<a href=""><img src="img/section3/file-1536232158.jpg"/></a>
+						<a href="">汤姆·克鲁斯：对我来说，拍电影就是度假</a>
+						<span>视频专栏</span>
+					</li>
+					<li>
+						<a href=""><img src="img/section3/file-1533265075.jpg"/></a>
+						<a href="">蔡明亮：创作有时候是一种命运的安排</a>
+						<span>视频专栏</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div style="position: relative;margin: 0 auto;width: 950px;background-color: #edf4ed;margin-top: 36px;">
+			<a href=""><img src="img/4de69c04f5cc842.jpg"/></a>
+		</div>
+		
+	    <div class="section" id="section4">
+	    	<div id="section4-left">
+	    		<a href="">小组</a>
+	    		<ul>
+	    			<li><a href="">精选</a></li>
+	    			<li><a href="">文化</a></li>
+	    			<li><a href="">行摄</a></li>
+	    			<li><a href="">娱乐</a></li>
+	    			<li><a href="">时尚</a></li>
+	    			<li><a href="">生活</a></li>
+	    			<li><a href="">科技</a></li>
+	    		</ul>
+	    	</div>
+	    	<div id="section4-middle">
+	    		<p style="color: #000000;">热门小组 . . . . .(<a href="">更多</a>)</p>
+	    		<ul>
+	    			<li>
+	    				<div>
+	    					<a href="https://www.douban.com/group/407193/" target="_blank"><img src="img/section4/c285ce8ca3631db.jpg"/></a>
+	    				</div>
+	    				<div>
+	    					<p>帮帮组™加入这个组就有人帮你了！</p>
+	    					<span>15810 个成员</span>
+	    				</div>
+	    			</li>
+	    			<li>
+	    				<div>
+	    					<a href=""><img src="img/section4/ef4bd6235a7c6c2.jpg"/></a>
+	    				</div>
+	    				<div>
+	    					<p>我爱三毛</p>
+	    					<span>5428个成员</span>
+	    				</div>
+	    			</li>
+	    			<li>
+	    				<div>
+	    					<a href=""><img src="img/section4/063bb07a807a340.jpg"/></a>
+	    				</div>
+	    				<div>
+	    					<p>沙发客</p>
+	    					<span>5141成员</span>
+	    				</div>
+	    			</li>
+	    			<li>
+	    				<div>
+	    					<a href=""><img src="img/section4/68b08f0f3595407.jpg"/></a>
+	    				</div>
+	    				<div>
+	    					<p>刘慈欣</p>
+	    					<span>12525个成员</span>
+	    				</div>
+	    			</li>
+	    			<li>
+	    				<div>
+	    					<a href=""><img src="img/section4/8f11b2285655782.jpg"/></a>
+	    				</div>
+	    				<div>
+	    					<p>西双版纳</p>
+	    					<span>8546个成员</span>
+	    				</div>
+	    			</li>
+	    			<li>
+	    				<div>
+	    					<a href=""><img src="img/section4/17fdb616ff143d8.jpg"/></a>
+	    				</div>
+	    				<div>
+	    					<p>记事本圆梦小组</p>
+	    					<span>56482个成员</span>
+	    				</div>
+	    			</li>
+	    			<li>
+	    				<div>
+	    					<a href=""><img src="img/section4/g33120-3.jpg"/></a>
+	    				</div>
+	    				<div>
+	    					<p>搭讪学</p>
+	    					<span>15285个成员</span>
+	    				</div>
+	    			</li>
+	    			<li>
+	    				<div>
+	    					<a href=""><img src="img/section4/2e49d167d4322c2.jpg"/></a>
+	    				</div>
+	    				<div>
+	    					<p>这辈子一定要做几件疯狂的事</p>
+	    					<span>654824个成员</span>
+	    				</div>
+	    			</li>
+	    			<li>
+	    				<div>
+	    					<a href=""><img src="img/section4/g109498-1.jpg"/></a>
+	    				</div>
+	    				<div>
+	    					<p>自己给自己剪头发</p>
+	    					<span>9235个成员</span>
+	    				</div>
+	    			</li>
+	    			<li>
+	    				<div>
+	    					<a href=""><img src="img/section4/g83759-2.jpg"/></a>
+	    				</div>
+	    				<div>
+	    					<p>我们就是要做衣服给自己穿</p>
+	    					<span>58467个成员</span>
+	    				</div>
+	    			</li>
+	    			<li>
+	    				<div>
+	    					<a href=""><img src="img/section4/e6ba9bc4c8facbe.jpg"/></a>
+	    				</div>
+	    				<div>
+	    					<p>对象太他妈难找了党</p>
+	    					<span>65842个成员</span>
+	    				</div>
+	    			</li>
+	    		</ul>
+	    	</div>
+	    	<div id="section4-right">
+	    		<p>小组分类 . . . . .</p>
+	    		<div class="section4-right-1">
+	    			<p><a href="">兴趣 》</a></p>
+	    			<ul>
+	    				<li>旅游</li>
+	    				<li>摄影</li>
+	    				<li>影视</li>
+	    				<li>音乐</li>
+	    				<li>文学</li>
+	    				<li>游戏</li>
+	    				<li>动漫</li>
+	    				<li>运动</li>
+	    				<li>戏曲</li>
+	    				<li>桌游</li>
+	    				<li>怪癖</li>
+	    			</ul>
+	    		</div>
+	    		<div class="section4-right-1">
+	    			<p><a href="">生活 》</a></p>
+	    			<ul>
+	    				<li>健康</li>
+	    				<li>美食</li>
+	    				<li>宠物</li>
+	    				<li>美容</li>
+	    				<li>化妆</li>
+	    				<li>护肤</li>
+	    				<li>服饰</li>
+	    				<li>公益</li>
+	    				<li>家庭</li>
+	    				<li>育儿</li>
+	    				<li>汽车</li>
+	    			</ul>
+	    		</div>
+	    		<div class="section4-right-1">
+	    			<p><a href="">购物 》</a></p>
+	    			<ul>
+	    				<li>淘宝</li>
+	    				<li>二手</li>
+	    				<li>团购</li>
+	    				<li>数码</li>
+	    				<li>品牌</li>
+	    				<li>文具</li>
+	    				<li>转手</li>
+	    			</ul>
+	    		</div>
+	    		<div class="section4-right-1">
+	    			<p><a href="">社会 》</a></p>
+	    			<ul>
+	    				<li>求职</li>
+	    				<li>租房</li>
+	    				<li>励志</li>
+	    				<li>留学</li>
+	    				<li>出国</li>
+	    				<li>理财</li>
+	    				<li>传媒</li>
+	    				<li>创业</li>
+	    				<li>考试</li>
+	    			</ul>
+	    		</div>
+	    		<div class="section4-right-1">
+	    			<p><a href="">艺术 》</a></p>
+	    			<ul>
+	    				<li>设计</li>
+	    				<li>手工</li>
+	    				<li>展览</li>
+	    				<li>曲艺</li>
+	    				<li>舞蹈</li>
+	    				<li>雕塑</li>
+	    				<li>纹身</li>
+	    			</ul>
+	    		</div>
+	    		<div class="section4-right-1">
+	    			<p><a href="">学术 》</a></p>
+	    			<ul>
+	    				<li>人文</li>
+	    				<li>社科</li>
+	    				<li>自然</li>
+	    				<li>建筑</li>
+	    				<li>国学</li>
+	    				<li>语言</li>
+	    				<li>宗教</li>
+	    				<li>哲学</li>
+	    				<li>软件</li>
+	    				<li>硬件</li>
+	    				<li>互联网</li>
+	    			</ul>
+	    		</div>
+	    		<div class="section4-right-1">
+	    			<p><a href="">情感 》</a></p>
+	    			<ul>
+	    				<li>恋爱</li>
+	    				<li>辛勤</li>
+	    				<li>心理学</li>
+	    				<li>星座</li>
+	    				<li>塔罗</li>
+	    				<li>LES</li>
+	    				<li>GAY</li>
+	    			</ul>
+	    		</div>
+	    		<div class="section4-right-1">
+	    			<p><a href="">闲聊 》</a></p>
+	    			<ul>
+	    				<li>吐槽</li>
+	    				<li>笑话</li>
+	    				<li>直播</li>
+	    				<li>八卦</li>
+	    				<li>发泄</li>
+	    			</ul>
+	    		</div>
+	    	</div>
+	    </div>
+	       
+	    <div class="section" id="section5">
+	    	<div id="section5-left">
+	    		<a href="">豆品</a>
+	    	</div>
+	    	<div id="section5-middle">
+	    		<p>热卖商品 . . . . .(<a href="">更多</a>)</p>
+	    		<ul>
+	    			<li>
+	    				<a href=""><img src="img/section5/file-1537365946-0.jpg"/></a>
+	    				<p>
+	    					<a href="">豆瓣电影日历2019</a>
+	    					<span>￥159.00</span>
+	    				</p>
+	    			</li>
+	    			<li>
+	    				<a href=""><img src="img/section5/file-1513305186-5.jpg"/></a>
+	    				<p>
+	    					<a href="">布面精装本</a>
+	    					<span>￥48.00</span>
+	    				</p>
+	    			</li>
+	    			<li>
+	    				<a href=""><img src="img/section5/file-1513305186-4.jpg"/></a>
+	    				<p>
+	    					<a href="">豆瓣收藏夹</a>
+	    					<span>￥99.00</span>
+	    				</p>
+	    			</li>
+	    			<li>
+	    				<a href=""><img src="img/section5/file-1540202754-1.jpg"/></a>
+	    				<p>
+	    					<a href="">豆瓣2019日程本</a>
+	    					<span>￥88.00</span>
+	    				</p>
+	    			</li>
+	    		</ul>
+	    	</div>
+	    	<div id="section5-right">
+	    		<div id="section5-right1">
+	    			<p>热门活动 . . . . .</p>
+	    			<a href=""><img src="img/section5/file-1513305186-3.jpg"/></a>
+	    			<a href="">我们的豆瓣收藏夹有什么</a>
+	    		</div>
+	    		<div id="section5-right2">
+	    			<p>官方小组 . . . . .<span>(更多)</span></p>
+	    			<ul>
+	    				<li>
+	    					<a href="">2019豆瓣电影日历即将上线，参与转发活动得新品豆瓣日历</a><br />
+	    					<div id="section5-right2-text">
+	    						<span>70 人参与</span>
+	    						<span>09-24</span>
+	    					</div>
+	    				</li>
+	    				<li>
+	    					<a href="">「豆瓣市集」升级为「豆瓣豆品」</a><br />
+	    					<div id="section5-right2-text">
+	    						<span>62 人参与</span>
+	    						<span>12-22</span>
+	    					</div>
+	    				</li>
+	    				<li>
+	    					<a href="">【组规】emmmm...这是豆瓣豆品官方小组组规</a><br />
+	    					<div id="section5-right2-text">
+	    						<span>36 人参与</span>
+	    						<span>12-21</span>
+	    					</div>
+	    				</li>
+	    			</ul>
+	    		</div>
+	    	</div>
+	    </div>
+	    
+		<footer>
+			<div>
+				<p>© 2005－2018 douban.com, all rights reserved 北京豆网科技有限公司</p>
+				<p><a href="">京ICP证090015号</a> 京ICP备11027288号 网络视听许可证 0110418号</p>
+				<p>京网文<a href="">[2015]2026-368</a>号<a href="">京公网安备11010502000728</a> 新出网证(京)字129号</p>
+				<p>违法和不良信息举报电话：4008353331-9&nbsp;</p>
+				<p><a href="">中国互联网举报中心</a>&nbsp;电话：12377&nbsp;<a href="">新出发京批字第直160029号</a>" </p>
+			</div>
+			<div>
+				<ul>
+					<li><a href="">关于豆瓣</a></li>
+					<li><a href="">在豆瓣工作</a></li>
+					<li><a href="">联系我们</a></li>
+					<li><a href="">免责声明</a></li>
+					<li><a href="">帮助中心</a></li>
+					<li><a href="">移动应用</a></li>
+					<li><a href="">豆瓣广告</a></li>
+				</ul>
+				<a id="tu0" href=""><img src="img/file-1489464722.jpg"/></a>
+			</div>
+		</footer>
+		
+		<div id="dtop">
+    		<a href="">
+   				<img src="img/untitled.png" title="返回顶部" />
+    		</a>
+    	</div>
+	</body>	
+</html>
